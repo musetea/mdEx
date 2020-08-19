@@ -1,0 +1,31 @@
+{
+  "name": "md-exe",
+  "version": "1.0.0",
+  "description": "md editer",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx webpack -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musetea/mdEx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musetea/mdEx/issues"
+  },
+  "homepage": "https://github.com/musetea/mdEx#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.1",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
