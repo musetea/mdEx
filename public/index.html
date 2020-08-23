@@ -8,28 +8,35 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <header>
-        <div id="menu">
-            <span>Save As</span>
-            <div id="saveas-markdown"></div>
-            <div id="saveas-html"></div>
-            <a href="" id="close-menu">&times;</a>
-        </div>
-        <nav>
-            <a href="" id="logo">
-                <p id="title">마크다운 에디터 EXE</p>
-            </a>
-            <button id="openbutton" title="불러오기" class="nav-button left" ><i class="material-icons">open_in_browser</i></button>
-            <input id="fileInput" type="file" class="hidden" accept=".md,.mdown,.txt,.markdown"/>
-            <button id="nightbutton"><i class="material-icons">invert_colors</i></button>
-            <button id="readbutton"><i class="material-icons">chrome_reader_mode</i></button>
-        </nav>
-    </header>
-    <main>
-        <section id="in"><form><textarea id="code" ></textarea></form></section>
-        <section><div id="out"></div></section>
-    </main>
-
+    <div class="container">
+        <header>
+            <div id="menu">
+                <span>Save As</span>
+                <div id="saveas-markdown"></div>
+                <div id="saveas-html"></div>
+                <a href="" id="close-menu">&times;</a>
+            </div>
+            <nav>
+                <a href="" id="logo"><p id="title">마크다운 에디터 EXE</p></a>
+                <button id="openbutton" title="불러오기" class="nav-button left" ><i class="material-icons">open_in_browser</i></button>
+                <input id="fileInput" type="file" class="hidden" accept=".md,.mdown,.txt,.markdown"/>
+                <button id="savebutton" title="Download" class="nav-button"><i class="material-icons">file_download</i></button>
+                <button id="browsersavebutton" title="Browser Save (Experimental)" class="nav-button"><i class="material-icons">save</i></button>
+                <button id="sharebutton" title="Generate Shareable Link" class="nav-button left"><i class="material-icons">share</i></button>
+                <button id="nightbutton" title="Night Mode"><i class="material-icons">invert_colors</i></button>
+                <button id="readbutton" title="Reading Mode"><i class="material-icons">chrome_reader_mode</i></button>
+                <button id="spellbutton" title="Spell Check" class="nav-button left selected"><i class="material-icons">spellcheck</i></button>
+                <button id="newbutton" class="nav-button left hidden" onclick="clearEditor()">Clear</button>
+                <button id="sharebutton" class="nav-button left selected hidden">Share</button>
+            </nav>
+        </header>
+        <main>
+            <section id="in"><form><textarea id="code" ># New Document</textarea></form></section>
+            <section><div id="out" class="markdown-body"></div></section>
+        </main>
+        <footer></footer>
+    </div>
+    
     <script src="./index.js"></script>
 </body>
 </html>

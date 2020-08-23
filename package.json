@@ -4,7 +4,7 @@
   "description": "md editer",
   "main": "index.js",
   "scripts": {
-    "dev": "npx webpack -d"
+    "dev": "npx webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,11 @@
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "codemirror": "^5.56.0",
+    "highlight.js": "^10.1.2",
+    "markdown-it": "^11.0.0",
+    "markdown-it-footnote": "^3.0.2"
   }
 }
